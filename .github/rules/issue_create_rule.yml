@@ -1,0 +1,14 @@
+---
+conditions:
+  all:
+    - fact: payload.issue.user.login
+      operator: equal
+      value: jefeish
+
+event:
+  type: issuesCreateComment
+  params:
+    data: Thank you for creating this issue! This is a Client-Side Rule!
+
+# default is '1'
+priority: 1
