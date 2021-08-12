@@ -4,7 +4,7 @@ conditions:
   # Title starts with ‘[bug]’
   - fact: payload.issue.title          
     operator: regex
-    value: ^\[bug\]
+    value: ^\[bugme\]
   # Prevent loops
   - fact: payload.sender.type
     operator: notEqual
