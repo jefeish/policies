@@ -4,11 +4,8 @@ conditions:
     - fact: payload.issue.user.login
       operator: equal
       value: jefeish
-  # Prevent loops
-    - fact: payload.sender.type
-      operator: notEqual
-      value: Bot
-handlers:  
+
+event:  
   - type: issuesCreateComment
     params:
       comment: Thank you for creating this issue! This is a Client-Side Rule!
