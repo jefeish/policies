@@ -11,7 +11,7 @@ conditions:
 event:
   type: issuesCreateComment
   params:
-    data: Thank you for creating this issue! This is a Client-Side Rule!
+    comment: Thank you for creating this issue! This is a Client-Side Rule!
 
 # default is '1'
 priority: 1
