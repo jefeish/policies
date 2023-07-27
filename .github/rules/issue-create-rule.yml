@@ -14,7 +14,7 @@ handlers:
       comment: Thank you for creating this issue! This is a Client-Side Rule!
   - type: issuesCreateComment
     params:
-      comment: Thank you for creating this issue! This is a Client-Side Rule!
+      comment: another Client-Side Rule!
 
 # default is '1'
 priority: 1
