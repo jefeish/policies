@@ -7,13 +7,14 @@ conditions:
 
 event:  
   type: create two comments
-  handlers:
-    - name: issuesCreateComment
-      params:
-        comment: Thank you for creating this issue! This is a Client-Side Rule!
-    - name: issuesCreateComment
-      params:
-        comment: another ...This is a Client-Side Rule!
+  params:
+    handlers:
+      - name: issuesCreateComment
+        data:
+          comment: Thank you for creating this issue! This is a Client-Side Rule!
+      - name: issuesCreateComment
+        data:
+          comment: another ...This is a Client-Side Rule!
 
 # default is '1'
 priority: 1
